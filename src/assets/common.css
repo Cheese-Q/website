@@ -1,0 +1,744 @@
+@charset "utf-8";
+
+/* #custom
+================================================== */
+
+
+/* 主页公共样式 */
+
+.el-pagination {
+    margin-top: 50px;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    /* height: 100%; */
+}
+
+.el-pagination {
+    text-align: center;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    background-color: #f6ebd880;
+    min-width: 1440px;
+    /* height: 100%; */
+}
+
+.el-aside {
+    /*   background-color: #f9f9f9;      */
+    color: #333;
+    height: 450px;
+}
+
+.vunueName {
+    width: 200px;
+    height: 50px;
+    font-size: 36px;
+    color: #fff;
+    margin: 100px 50px 0;
+}
+
+.ih-item {
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.ih-item .img img {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+}
+
+.ih-item .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    /* 隐藏旋转元素的背面*/
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    /*后面这个0.6是指的背景的透明度*/
+    /*opacity: 0;*/
+    /*-webkit-transition: all 0.8s ease-in-out;*/
+    /*规定提示信息怎样出现ease-in-out以慢速度开始和结束**/
+    /*-moz-transition: all 0.8s ease-in-out;*/
+    /*transition: all 0.8s ease-in-out;*/
+}
+
+
+/**
+.ih-item a:hover .info {
+  opacity: 1;
+}
+*/
+
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+    background-color: #d3dce6;
+}
+
+.el-header,
+.el-footer {
+    /* background-color: #b3c0d1; */
+    color: #333;
+    text-align: center;
+}
+
+.el-header {
+    height: 100px !important;
+    /* background-color: pink; */
+}
+
+.el-footer {
+    height: 100px !important;
+}
+
+.el-main {
+    color: #333;
+    /* background-color: skyblue; */
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.img-card {
+    width: 550px;
+    height: 300px;
+}
+
+.newsInformation {
+    display: inline-block;
+    float: left;
+}
+
+.newsfl {
+    margin-left: 50px;
+    background: url('../assets/index/xw.png') no-repeat;
+    width: 550px;
+    height: 300px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.newsList {
+    height: 200px;
+}
+
+.fz {
+    left: -20px;
+}
+
+.f {
+    right: -20px;
+}
+
+.c-333 {
+    font-size: 24px;
+    color: #555;
+}
+
+.c-555 {
+    font-size: 32px;
+    color: #fff;
+    background-color: #274da1;
+    letter-spacing: 2px;
+}
+
+
+/* 主页 */
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    height: 0 !important;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.tac span {
+    font-size: 40px;
+    color: #555;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.f-fH {
+    font-family: SimHei;
+}
+
+.f-fM {
+    font-family: "Microsoft YaHei";
+}
+
+.f-fA {
+    font-family: SimSun;
+}
+
+.f-fG {
+    font-family: Georgia;
+}
+
+.unBg {
+    background: 0 0 !important;
+}
+
+.unBr {
+    border: none !important;
+}
+
+.unFw {
+    font-weight: 400;
+}
+
+.dis {
+    display: block;
+}
+
+.disIb {
+    display: inline-block;
+}
+
+.undis {
+    display: none;
+}
+
+.of {
+    overflow: hidden;
+}
+
+.ov {
+    overflow: visible;
+}
+
+.vam {
+    vertical-align: middle;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tac span {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.fsize12 {
+    font-size: 12px;
+}
+
+.fsize14 {
+    font-size: 14px;
+}
+
+.fsize16 {
+    font-size: 16px;
+}
+
+.fsize18 {
+    font-size: 18px;
+}
+
+.fsize20 {
+    font-size: 20px;
+}
+
+.fsize24 {
+    font-size: 24px;
+}
+
+.fsize34 {
+    font-size: 34px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mr40 {
+    margin-right: 40px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.ml40 {
+    margin-left: 40px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pr15 {
+    padding-right: 15px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pl15 {
+    padding-left: 15px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pt50 {
+    padding-top: 50px;
+}
+
+.pr50 {
+    padding-right: 50px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+.icon14 {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    vertical-align: middle;
+}
+
+.icon16 {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+.icon18 {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+}
+
+.icon20 {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.icon24 {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.icon30 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.txtOf {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hLh20 {
+    height: 20px;
+    line-height: 20px;
+}
+
+.hLh30 {
+    height: 30px;
+    line-height: 30px;
+}
+
+.col-7 {
+    width: 70%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.lt-ie9 .col-7,
+.lt-ie9.lt-ie8 .col-7 {
+    width: 75%;
+}
+
+.lt-ie9 .col-3,
+.lt-ie9.lt-ie8 .col-3 {
+    width: 25%;
+}
+
+
+/*.container {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.c-green {
+    color: #14ba4c;
+}
+
+.c-yellow {
+    color: #fc0;
+}
+
+.c-orange {
+    color: #ff8723;
+}
+
+.c-blue {
+    color: #3580de;
+}
+
+.c-red {
+    color: #cf3f3f;
+}
+
+.c-666 {
+    color: #666;
+}
+
+.c-999 {
+    color: #999;
+}
+
+.c-ccc {
+    color: #ccc;
+}
+
+.c-fff {
+    color: #fff;
+}
+
+.bg-green {
+    background-color: #14ba4c;
+}
+
+.bg-fa {
+    background-color: #fafafa;
+}
+
+.c-btn-3 {
+    border-color: #fc0;
+    color: #fc0;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+legend {
+    color: #000
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+button {
+    border-radius: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
