@@ -31,30 +31,7 @@
         </el-header>
         <el-main>
             <el-row>
-            <el-col :span="6" >
-                <div style="padding: 14px;" class="image">
-                     <a href="https://720yun.com/t/dbvkOb2hspw?scene_id=58370400">
-                           <img src="../../../assets/vr1.jpg"  style="border-radius:3px">
-                      </a>
-                  </div>
-                  <div class="title">红色百年革命展</div>
-            </el-col>
-            <el-col :span="6" :offset="2">
-                <div style="padding: 14px;" class="image">
-                     <a href="https://720yun.com/t/8avkOh19r2w?scene_id=57959553">
-                           <img src="../../../assets/vr2.jpg"  style="border-radius:3px">
-                      </a>
-                  </div>
-                  <div class="title">馆藏文物精品展</div>
-            </el-col>
-            <el-col :span="6" :offset="2">
-                <div style="padding: 14px;" class="image">
-                     <a href="https://720yun.com/t/06vksy2wdqm?scene_id=45871196">
-                           <img src="../../../assets/vr3.jpg"  style="border-radius:3px">
-                      </a>
-                  </div>
-                  <div class="title">越窑青瓷展厅</div>
-            </el-col>
+            
             </el-row>   
         </el-main>
     </el-container>
